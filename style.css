@@ -1,0 +1,391 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border-radius:10px;
+}
+
+body {
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  font-family: sans-serif;
+  background-color: #fff;
+  overflow: hidden;
+}
+p{
+  font-size:18px;
+}
+.dotnet{
+  display:flex;
+  flex-direction:column;
+
+}
+
+.upload-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.login-btn {
+  height: 2.3rem;
+  width: 6rem;
+  color: #fff;
+  background-color: rgb(254, 44, 85);
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.login-btn:hover {
+  background-color: rgb(233, 37, 76);
+  cursor: pointer;
+}
+
+
+
+
+.hidden {
+  display: none;
+}
+
+main {
+  display: flex;
+  width: 100vw;
+  
+}
+
+
+
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding-bottom: 1rem;
+  margin-top: 1rem;
+  margin-left: 8rem;
+  margin-right: 1rem;
+  width: 90%;
+}
+
+.btns > a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(22, 24, 35);
+  font-weight: 600;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  border-radius: 5px;
+}
+
+.btns > a:hover {
+  background-color: rgb(245, 245, 245);
+}
+
+.btns > a:first-child > i, .btns > a:first-child > span {
+  color: rgb(254, 44, 85);
+}
+
+.btns > a > i {
+  margin-right: 1rem;
+}
+
+.login {
+  margin-top: 1rem;
+  border-bottom: 1px solid rgb(200, 200, 200);
+  padding-bottom: 1rem;
+  margin-left: 8rem;
+  margin-right: 1rem;
+  width: 90%;
+}
+
+.login > p {
+  color: rgba(22, 24, 35, 0.5);
+  font-size: 0.9rem;
+  line-height: 25px;
+  width: 70%;
+}
+
+ button {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: 1px solid rgb(254, 44, 85);
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(254, 44, 85);
+  cursor: pointer;
+  border-radius: 5px;
+  height: 3rem;
+  width: 70%;
+}
+
+.login > button:hover {
+  background-color: rgba(245, 44, 86, 0.05);
+}
+
+
+
+
+
+.user {
+  display: flex;
+  align-items: center;
+  border-radius: 5px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 30rem;
+}
+
+.user:hover {
+  background-color: rgb(245, 245, 245);
+  cursor: pointer;
+}
+
+.user > img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  border: 0.5px solid #000;
+}
+
+.user > h6 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+
+
+.links {
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+    margin-left: 8rem;
+    margin-right: 1rem;
+    width: 60%;
+}
+
+.links > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 5px;
+}
+
+.link > a {
+    font-size: 0.8rem;
+    text-decoration: none;
+    color: rgb(80,80,80);
+}
+
+.link > a:hover {
+    text-decoration: underline;
+}
+
+.copyright {
+    margin-top: 1rem;
+    color: rgb(80,80,80);
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(22,24,35,0.06);
+}
+
+.right {
+    flex: 1;
+    height: 95vh;
+    overflow-y:scroll;
+}
+
+.post {
+    margin-top: 2rem;
+    margin-right: 4rem;
+    height: 40.1rem;
+    width: 80%;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+
+.post-info {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post-info > .user:hover {
+    background-color: transparent;
+}
+
+.post-info > .user > img {
+    height: 60px;
+    width: 60px;
+}
+
+.post-info > .user > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+    margin-left: 0.5rem;
+}
+
+.post-info > .user > div > h6 {
+    font-size: 1rem;
+}
+
+.post-info > .user > div > h6:hover {
+    text-decoration: underline;
+}
+
+.post-info > .user > div > p {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.post-info > button {
+    margin-top: 1rem;
+    background-color: transparent;
+    border: 1px solid rgb(254,44,85);
+    color: rgb(254, 44, 85);
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 5px;
+    height: 1.7rem;
+    width: 5.7rem;
+}
+
+.post-info > button:hover {
+    background-color: rgba(254,44,86,0.05);
+}
+
+.post-content {
+    display: flex;
+    width: 19.8rem;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.post-content > video {
+    width: 90%;
+    border-radius: 10px;
+    margin-left: 5rem;
+}
+
+.video-icons {
+    position: absolute;
+    top: 44%;
+    left: 120%;
+}
+
+.video-icons > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    text-decoration: none;
+}
+
+.video-icons > a > i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(245, 245, 245);
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.video-icons > a > i:hover {
+    background-color: rgb(230,230,230);
+}
+
+.video-icons > a > span {
+    font-size: 0.7rem;
+    color: rgb(80,80,80);
+    font-weight: 600;
+    margin-bottom: 0.7rem;
+}
+
+video::-webkit-media-controls-fullscreen-button,
+video::-webkit-media-controls-current-time-display,
+video::-webkit-media-controls-time-remaining-display {
+    display: none;
+}
+
+.video-icons a {
+  color: gray;
+}
+
+.video-icons a.liked {
+  color: red;
+}
+
+@media (max-width: 1000px) {
+
+    body {
+      overflow-x: hidden ;
+    }
+   
+    .right {
+      flex: 0.9;
+    }
+  
+.video-icons a {
+  color: gray;
+}
+
+.video-icons a.liked {
+  color: red;
+}
+
+    .btns {
+      margin: 0;
+      align-items: center;
+    }
+  
+    .btns > a > span {
+      display: none;
+    }
+  
+    .login {
+      display: none;
+    }
+  
+    .accounts {
+      margin: 0;
+      border: none;
+      align-items: center;
+    }
+  
+    .accounts > p {
+      display: none;
+    }
+  
+    .accounts > .user > h6 {
+      display: none;
+    }
+  
+    .user {
+      padding-left: 0rem;
+    }
+  
+    
+    .post-content > video {
+      margin-left: 2rem;
+    }
+  
+    .video-icons {
+      left: 100%;
+    }
+  
+  }
